@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/">
+        <file>space.png</file>
+        <file>SOL.png</file>
+    </qresource>
+</RCC>
