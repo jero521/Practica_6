@@ -5,8 +5,8 @@ planetas::planetas(int num_planetas , float rad_, float px_,float py_, float vx_
     m=mm;  //masa
     r=rad_/10;  //radio
     n=num_planetas; //numero de planetas
-    px = px_/10; //posicion en x
-    py = py_/10; //posicion en y
+    px = px_/2; //posicion en x
+    py = py_/2; //posicion en y
     setPos(px,-py);
     vx = vx_; //velocidad en x
     vy = vy_; //velocidad en y
@@ -14,8 +14,8 @@ planetas::planetas(int num_planetas , float rad_, float px_,float py_, float vx_
 
 }
 void planetas::actualizar(float x, float y, float vxx, float vyy){
-    px = x/10;
-    py = y/10;
+    px = x;
+    py = y;
     vx = vxx;
     vy = vyy;
 }
@@ -50,6 +50,11 @@ float planetas::getVx()
     return vx;
 }
 
+void planetas::setVx(float vvx)
+{
+    vx=vvx;
+}
+
 
 
 //Se le da la velocidad de y
@@ -58,11 +63,16 @@ float planetas::getVy()
     return vy;
 }
 
+void planetas::setVy(float vvy)
+{
+    vy=vvy;
+}
+
 
 //Se le radio
 float planetas::getRad()
 {
-    return r=10;
+    return r=20;
 }
 
 

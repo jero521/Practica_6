@@ -45,3 +45,4 @@ void bola::mover()
     vely=vely<(ay);
     setPos(int(px),-int (py));
 }
+

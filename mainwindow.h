@@ -17,10 +17,7 @@ class MainWindow : public QMainWindow
 
 public:
     MainWindow(QWidget *parent = nullptr);
-
-
     static MainWindow *Pintarmain();
-
 
     planetas *Planeta_1;
     planetas *Planeta_2;
@@ -31,18 +28,17 @@ public:
 
 private slots:
 
-    //void Star();
-
+    void Actualizar();
+    void on_Button_clicked();
 
 private:
     Ui::MainWindow *ui;
     QGraphicsScene *escena;
-
     int v_limit;
     int h_limit;
-    static MainWindow *wind;
-    int numb, n=0, num_plane=0;
-    double px, py, vx, vy, T=0.01, G=-9.8;
+   // static MainWindow *wind;
+    int n=0, num_plane=0;
+    float px, py, vx, vy, T=1, G[2]={0.0,-9.8};
     QTimer *t;
     //QObject *bola;
 };

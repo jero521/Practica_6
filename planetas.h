@@ -21,7 +21,9 @@ public:
     float getPy();
 
     float getVx();
+    void setVx(float);
     float getVy();
+    void setVy(float);
 
 
     float MASA();
